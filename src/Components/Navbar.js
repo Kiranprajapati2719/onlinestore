@@ -10,7 +10,7 @@ export default class Navbar extends Component {
     const { activeItem } = this.state;
 
     return (
-      <Menu primary>
+      <Menu secondary stackable pointing color="purple" size="big">
         {/*add stackable for responsive*/}
         <Menu.Item name="logo" onClick={this.handleItemClick}>
           <Image
@@ -26,22 +26,22 @@ export default class Navbar extends Component {
         />
         <Menu.Item
           name="Shop"
-          active={activeItem === "messages"}
+          active={activeItem === "Shop"}
           onClick={this.handleItemClick}
         />
         <Menu.Item
           name="About"
-          active={activeItem === "friends"}
+          active={activeItem === "About"}
           onClick={this.handleItemClick}
         />
         <Menu.Item
           name="Contact"
-          active={activeItem === "friends"}
+          active={activeItem === "Contact"}
           onClick={this.handleItemClick}
         />
         <Menu.Menu position="right">
           <Menu.Item>
-            <Input icon="search" placeholder="Search..." />
+            <Input icon="search" placeholder="Looking for something..." />
           </Menu.Item>
         </Menu.Menu>
       </Menu>
