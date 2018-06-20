@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Input, Menu, Image } from "semantic-ui-react";
-
+// fkilr starts
 export default class Navbar extends Component {
   state = { activeItem: "home" };
 
