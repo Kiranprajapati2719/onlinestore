@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Input, Menu, Image } from "semantic-ui-react";
-// fkilr starts
+
 export default class Navbar extends Component {
   state = { activeItem: "home" };
 
@@ -10,13 +10,12 @@ export default class Navbar extends Component {
     const { activeItem } = this.state;
 
     return (
-      <Menu secondary stackable pointing color="purple" size="big">
+      <Menu secondary pointing stackable color="purple" size="big">
         {/*add stackable for responsive*/}
         <Menu.Item name="logo" onClick={this.handleItemClick}>
           <Image
             size="mini"
-            fluid /* src="https://cdn.pixabay.com/photo/2016/08/06/14/11/lion-1574448_960_720.png" */
-            src="https://cdn.pixabay.com/photo/2017/01/31/23/42/animal-2028258_960_720.png"
+            src="https://images.unsplash.com/photo-1505489435671-80a165c60816?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=af3fb5171edc0c520c99c8061510f4b8&auto=format&fit=crop&w=531&q=80"
           />
         </Menu.Item>
         <Menu.Item
